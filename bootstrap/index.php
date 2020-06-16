@@ -64,6 +64,28 @@
       tempor incididunt ut labore et dolore magna aliqua.</p>
     </div>
   </div>
+  <div class="row">
+    <div class="col">
+    <table>
+      
+        <tr>
+          <td>header</<td>
+            <td>header</<td>
+              <td>header</<td>
+        </tr>
+        <tr>
+          <td>data</td>
+          <td>data</td>
+          <td>data</td>
+        </tr>
+       <tr>
+          <td>data</td>
+          <td>data</td>
+          <td>data</td>
+        </tr>
+    </table>
+  </div>
+  </div>
 </div>
   
   
