@@ -13,8 +13,7 @@
 	<div class="container">
   <div class="row justify-content-start">
     <div class="col-8">
-     <p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-     tempor incididunt ut labore et dolore magna aliqua. 
+     <p align="justify">Bienvenido al uso de git en proyectos
     </div>
     <div class="col-4">
       <p align="justify" class="uno">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
