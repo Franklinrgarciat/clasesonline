@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>BOTONES DE COLORES</title>
+	<link rel="stylesheet" href="">
+</head>
+<style>
+	body{
+		background-color: ;
+	}
+	p{
+		width: 600px;
+		height: 50px;
+		padding: 20px;
+		text-align: center;
+		font-family: Arial;
+		font-size: 30px;
+		border: solid;
+	}
+	button{
+		width: 200px;
+		height: 100px;
+		font-family: Verdana;
+		font-size: 25px;
+	}
+	.red{
+		background-color: red;
+	}
+	.yellow{
+		background-color: yellow;
+	}
+	.green{
+		background-color: green;
+	}
+	.blue{
+		background-color: blue;
+	}
+	.orange{
+		background-color: orange;
+	}
+	.purple{
+		background-color: purple
+	}
+</style>
+<body>
+	<div id="fondo"><p id="texto"><b>FRANKLIN RAFAEL GARCIA TOVAR<b></p></div>
+	
+	<h2>SELECCIONE SU COLOR DE FONDO</h2>
+	<button class="red" value="red" onclick="cambiarfondo(this)">ROJO</button>
+	<button class="yellow" value="yellow" onclick="cambiarfondo(this)">AMARILLO</button>
+	<button class="green" value="green" onclick="cambiarfondo(this)">VERDE</button>
+	<br>
+	<h2>SELECCIONE SU COLOR DE FUENTE</h2>
+	<button class="blue" value="blue" onclick="cambiarletra(this)">AZUL</button>
+	<button class="orange" value="orange" onclick="cambiarletra(this)">NARANJA</button>
+	<button class="purple" value="purple" onclick="cambiarletra(this)">MORADO</button>
+</body>
+<script src="javascript/jquery.js"  type="text/javascript"></script>
+<script>
+
+	function cambiarfondo (color) {
+		var color=color.value;
+		console.log(color);
+		$("#fondo").css('background-color',color);
+	
+}
+function cambiarletra(color){
+	var color=color.value;
+	console.log(color);
+	$("#texto").css('color',color);
+}
+
+			
+		
+
+	
+	
+</script>
+</html>

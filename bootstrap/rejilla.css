@@ -1,0 +1,19 @@
+header{
+	background-color:  #2980b9;
+	padding: 20px;
+
+}
+article{
+	background-color: #ccc;
+}
+aside{
+	background-color: #2e4053;
+	color: white;
+}
+.otro{
+	background-color:   #839192 ;
+}
+footer{
+	background-color:  #f39c12;
+
+}

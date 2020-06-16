@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Nueva Clase</title>
+	<link rel="stylesheet" href="">
+</head>
+<style type="text/css" media="screen">
+	select{
+		width: 300px;
+		height: 100px;
+		font-family: Arial;
+		font-size: 50px;
+		border: 1;
+		background-color: lightgray;
+	}
+	input{
+		width: 600px;
+		height: 100px;
+		font-family: Arial;
+		font-size: 30px;
+		border: 1;
+		border-color: black;
+	}
+</style>
+<body>
+	<input type="text" name="texto" id="texto" value="">
+	
+	<br>
+
+	<h2>EDITOR DE COLERES</h2>
+	<select id="fondo">
+		<option value="red" class="fondo">rojo</option>
+		<option value="yellow" class="fondo">amarillo</option>
+		<option value="blue" class="fondo">azul</option>
+		<option value="green" class="fondo">
+		
+	</select>
+	<br><br>
+	<select id="letra">
+		<option value="red" class="letra">rojo</option>
+		<option value="yellow" class="letra">amarillo</option>
+		<option value="blue" class="letra">azul</option>
+		<option value="green" class="letra">verde</option>
+		
+	</select><br><br>
+	<select id="fuente">
+		<option value="Arial" class="letra">Arial</option>
+		<option value="Comic Sanz" class="letra">Comic Sanz</option>
+		<option value="Verdana" class="letra">Verdana</option>
+		<option value="Italy" class="letra">Italy</option>
+		
+	</select>
+	<br><br><hr>
+	<h3><span id="mitexto">TEXTO:</span></h3>
+	
+</body>
+<script src="javascript/jquery.js" type="text/javascript"></script>
+<script>
+
+	
+
+	$('#fondo').on('click',function(event){
+		var texto=event.target.value;
+		$('#mitexto').css('background-color',texto);
+	});
+	$('#texto').on('keydown',function(event){
+		var texto=event.target.value;
+		$('#mitexto').text(texto);
+	});
+	$('#letra').on('change',function(event){
+		var texto=event.target.value;
+		$('#mitexto').css('color',texto);
+	});
+	$('#fuente').on('change',function(event){
+		var texto=event.target.value;
+		$('#mitexto').css('font-family',texto);
+	});
+	
+</script>
+</html>
