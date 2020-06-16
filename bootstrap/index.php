@@ -65,23 +65,32 @@
     </div>
   </div>
   <div class="row">
-    <div class="col">
-    <table>
+    <div class="col-md-6">
+    <table class="table" class="table-bordered">
       
         <tr>
-          <td>header</<td>
-            <td>header</<td>
-              <td>header</<td>
+          <th>##</<th>
+            <th>Nombre</<th>
+              <th>Apellido</<th>
+                <th>Cedula</<th>
         </tr>
         <tr>
-          <td>data</td>
-          <td>data</td>
-          <td>data</td>
+          <td>1</td>
+          <td>Franklin</td>
+          <td>Garcia</td>
+          <td>24.669.949</td>
         </tr>
        <tr>
-          <td>data</td>
-          <td>data</td>
-          <td>data</td>
+          <td>2</td>
+          <td>Adrian</td>
+          <td>Castro</td>
+          <td>23.554.664</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Luis</td>
+          <td>Perez</td>
+          <td>43.233.554</td>
         </tr>
     </table>
   </div>
