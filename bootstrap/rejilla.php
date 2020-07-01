@@ -18,18 +18,13 @@
 		
 	</header>
 	<div class="container">
-	<section class="main row">
-		<article class="col-sm-9">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<section class="row">
+		<article class="text-center">
+				<img class="rounded" src="desert.jpg" width="800px" height="500px" >
 		</article>
 
 		<aside class="col-sm-3">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -41,7 +36,7 @@
 	
 	<div class="row">
 		<div class="col-md-3">
-			<p class="otro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p class="otro" align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -49,7 +44,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 		<div class="col-md-3">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p  align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -57,7 +52,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 		<div class="col-md-3">
-			<p class="otro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p class="otro" align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -65,7 +60,7 @@
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</div>
 		<div class="col-md-3">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			<p align="justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -76,7 +71,7 @@
 	</div>
 
 	<footer class="container fluid">
-		<h3>FRANKLIN GARCIA</h3>
+		<h3 align="center">FRANKLIN GARCIA</h3>
 	</footer>
 </body>
 <script src="jquery.js"></script>

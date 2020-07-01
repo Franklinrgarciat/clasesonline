@@ -1,0 +1,19 @@
+body{
+	background-color: #BDBDBD
+}
+.jumbotron{
+	background-color: #FF0000;
+	font-family: Didot;
+}
+.pie{
+	font-family: Brush Script MT;
+	font-size: 25px;
+}
+.breadcrumb{
+	background-color: #2E2E2E
+}
+#tarjet{
+	font-family: Verdana;
+	font-size: 25px;
+	color: black;
+}

@@ -11,14 +11,13 @@
 </head>
 <body>
 	<div class="container">
-  <div class="row justify-content-start">
-    <div class="col-8">
+  <div class="content-start">
+    <div class="col-2">
      <p align="justify">Bienvenido al uso de git en proyectos
     </div>
-    <div class="col-4">
-      <p align="justify" class="uno">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
+    <div class="rounded">
+      <img src="desert.jpg" width="">
+    </div><br>
   </div>
   <div class="row justify-content-center">
     <div class="col-4">
@@ -66,8 +65,8 @@
   </div>
   <div class="row">
     <div class="col-md-6">
-    <table class="table" class="table-bordered">
-      
+    <table class="table table-dark">
+      <thead>
         <tr>
           <th>##</<th>
             <th>Nombre</<th>
@@ -89,9 +88,30 @@
         <tr>
           <td>3</td>
           <td>Luis</td>
+          <td>Perezhjvbhvbjhbhjbjhbhjbjhbhjbhjbhjbhbhjbbhj</td>
+          <td>43.233.554</td>
+        </tr>
+        </thead>
+        <thead class="thead-light">
+          <tr>
+          <td>3</td>
+          <td>Luis</td>
+          <td></td>
+          <td>43.233.554</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Luis</td>
           <td>Perez</td>
           <td>43.233.554</td>
         </tr>
+        <tr>
+          <td>3</td>
+          <td>Luis</td>
+          <td>Perez</td>
+          <td>43.233.554</td>
+        </tr>
+      </thead>
     </table>
   </div>
   </div>
