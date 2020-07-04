@@ -30,9 +30,9 @@
 		echo $mi_arreglo[$i]." ";
 	}
 	echo "<br>";
-	echo $mi_arreglo[3]." ".$mi_arreglo[2]." ".$mi_arreglo[0]." ".$mi_arreglo[1];
+	echo $mi_arreglo[0]." ".$mi_arreglo[1]." ".$mi_arreglo[2]." ".$mi_arreglo[3];
 	echo "<br>";
-	for ($i=0; $i < count($mi_arreglo); $i++) { 
+	for ($i=count($mi_arreglo)-1;$i >=0; $i--) { 
 		echo $mi_arreglo[$i]." ";
 	}
 
