@@ -17,12 +17,15 @@
 	echo $minombre." cedula:".$cedula."<br>";
 
 	echo "$minombre cedula:$cedula";
+	echo "<br>";
 	//--------------------------------------------
 	$mi_arreglo[]= array();// declarando arreglo
 
-	$mi_arreglo= ['mi', 'especialidad','es'];
+	$mi_arreglo= ['mi', 'especialidad','es','programar'];
 
-	
+	echo $mi_arreglo[0]." ".$mi_arreglo[1]." ".$mi_arreglo[2]." ".$mi_arreglo[3];
+
+
 
 	?>
 </body>
