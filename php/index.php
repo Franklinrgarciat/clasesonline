@@ -35,7 +35,17 @@
 	for ($i=count($mi_arreglo)-1;$i >=0; $i--) { 
 		echo $mi_arreglo[$i]." ";
 	}
+	// ejercicios d arreglos
 
+	/*
+	1.- Suponga un array con N números enteros generados aleatoriamente y mostrados en pantalla, N debe ser un número impar, mostrar en pantalla el valor que ocupa el centro del array.
+
+	2.- Suponga un array con N notas de 0 a 20, calcule el promedio de aprobados y el promedio de los desaprobados e indique la cantidad de aprobados y desaprobados.
+
+	3.- Buscar un elemento dentro de un arreglo que nosotros le indiquemos en una variable. Si hay más de uno, indicar igualmente la posición.
+
+
+	*/
 	?>
 </body>
 </html>
