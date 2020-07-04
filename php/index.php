@@ -13,11 +13,16 @@
 	echo "<h1> BIENVENIDOS A PHP</h1></br>";
 	$minombre="Franklin Garcia";
 	$cedula=95756273;
+	//formas de imprimir variables
 	echo $minombre." cedula:".$cedula."<br>";
 
 	echo "$minombre cedula:$cedula";
+	//--------------------------------------------
+	$mi_arreglo[]= array();// declarando arreglo
 
+	$mi_arreglo= ['mi', 'especialidad','es'];
 
+	
 
 	?>
 </body>
