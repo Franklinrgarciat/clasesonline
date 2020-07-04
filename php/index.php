@@ -29,6 +29,12 @@
 	for ($i=0; $i < count($mi_arreglo); $i++) { 
 		echo $mi_arreglo[$i]." ";
 	}
+	echo "<br>";
+	echo $mi_arreglo[3]." ".$mi_arreglo[2]." ".$mi_arreglo[0]." ".$mi_arreglo[1];
+	echo "<br>";
+	for ($i=0; $i < count($mi_arreglo); $i++) { 
+		echo $mi_arreglo[$i]." ";
+	}
 
 	?>
 </body>
