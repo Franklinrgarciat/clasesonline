@@ -19,7 +19,7 @@
 	echo "$minombre cedula:$cedula";
 	echo "<br>";
 	//--------------------------------------------
-	$mi_arreglo[]= array();// declarando arreglo
+	/*$mi_arreglo[]= array();// declarando arreglo
 
 	$mi_arreglo= ['mi', 'especialidad','es','programar'];
 
@@ -34,7 +34,7 @@
 	echo "<br>";
 	for ($i=count($mi_arreglo)-1;$i >=0; $i--) { 
 		echo $mi_arreglo[$i]." ";
-	}
+	}*/
 	// ejercicios d arreglos
 
 	/*
@@ -46,6 +46,98 @@
 
 
 	*/
+
+	//suma
+	$numero1=3;
+	$numero2=6;
+	$sumar=$numero1+$numero2;
+	echo "La suma entre ".$numero1." y ".$numero2." es : ".$sumar;
+	echo "<br>";
+	//resta
+	$n1=10;
+	$n2=5;
+	$restar=$n1-$n2;
+	echo "La resta entre ".$n1." y ".$n2." es: ".$restar;
+	echo "<br>";
+	//multiplicacion
+	$n1=4;
+	$n2=5;
+	$producto=$n1*$n2;
+	echo "El producto entre ".$n1." y ".$n2." es: ".$producto;
+	echo "<br>";
+	//division
+	$n1=20;
+	$n2=2;
+	$division=$n1/$n2;
+	echo "La división entre ".$n1." y ".$n2." es: ".$division;
+	echo "<br>";
+	// resto
+	$n1=30;
+	$n2=7;
+	$resto=$n1%$n2;
+	echo "El resto de una divisón entre ".$n1." y ".$n2." es: ".$resto;
+	echo "<br>";
+	//potencia
+	$n1=20;
+	$n2=5;
+	$potencia=pow($n1,$n2);
+	echo "La potencia de ".$n1." a la ".$n2." es: ".$potencia;
+	echo "<br>";
+	//raiz cuadrada
+	$n1=3;
+	$raiz=pow($n1,1/2);
+	echo "La raiz cuadrada de ".$n1." es: ".round($raiz,2);
+	echo "<br>";
+
+	//cadenas de caracteres
+	$mi_cadena="     Franklin Rafael Garcia Tovar      ";
+	//longitud
+	$longitud=strlen($mi_cadena);
+	echo "La longitud de la cadena: (".$mi_cadena.") es: ".$longitud;
+	echo "<br>";
+	//reemplazo
+	$reemplazo=str_replace(' ', '_', $mi_cadena);
+	echo "Reemplazando espacios por _ de la cadena:<br>".$reemplazo;
+	echo "<br>";
+	$reemplazo=str_replace('a', 'i', $mi_cadena);
+	echo "Reemplazando 'a' por 'i' de la cadena:<br>".$reemplazo;
+	echo "<br>";
+	//quitando espacios
+	$sin_espacios=trim($mi_cadena);
+	echo "Cadena sin espacios:  ".$sin_espacios;
+	echo "<br>";
+	$sin_espacios_en_medio=str_replace(' ', '', $mi_cadena);
+	echo "eliminando espacios de la cadena:<br>".$sin_espacios_en_medio;
+	echo "<br>";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	?>
 </body>
 </html>
