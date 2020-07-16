@@ -109,11 +109,13 @@
 	$sin_espacios_en_medio=str_replace(' ', '', $mi_cadena);
 	echo "eliminando espacios de la cadena:<br>".$sin_espacios_en_medio;
 	echo "<br>";
+	//substr
+	$cadena="123456789";
+	$a=substr($cadena,0 ,-2);
+	$b=substr($cadena, 2);
+	echo $a." | ".$b."<br>";
 
-	2 + 3 = 13 => | 3 - 2 = 1 | 2 * 2 = 4 | 3 * 4 + 1 = 13
-	3 + 4 = 25 => | 4 - 3 = 1 | 3 * 2 = 6 | 4 * 6 + 1 = 25
-	4 + 5 = 41 => | 5 - 4 = 1 | 4 * 2 = 8 | 5 * 8 + 1 = 41
-	5 + 6 = ?  => | 6 - 5 = 1 | 5 * 2 = 10| 6 * 10 + 1 = 61
+	
 
 
 
