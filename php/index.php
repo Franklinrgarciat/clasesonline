@@ -110,10 +110,11 @@
 	echo "eliminando espacios de la cadena:<br>".$sin_espacios_en_medio;
 	echo "<br>";
 	//substr
-	$cadena="123456789";
-	$a=substr($cadena,0 ,-2);
-	$b=substr($cadena, 2);
-	echo $a." | ".$b."<br>";
+	$cadena="123456789"; // mi cadena de texto
+	$a=substr($cadena,0 ,-2); // elimina el final de caracteres de la cadena que se quiera con el signo - y valor
+	$b=substr($cadena, 2); // elimina el principio de los caracteres de una cadena
+	echo $a." | ".$b."<br>";// imprime variables por pantalla
+
 
 	
 
