@@ -117,7 +117,7 @@
 	$c=substr($cadena, 3,2);
 	$d=substr($cadena, -3,2);
 	$e=substr($cadena, 3,-2);
-	$e=substr($cadena, -3,-2);
+	$f=substr($cadena, -3,-2);
 
 	
 
