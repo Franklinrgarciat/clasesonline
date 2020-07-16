@@ -114,13 +114,15 @@
 	$a=substr($cadena,-2); // elimina todos los caracteres de la cadena menos los ultimos 2.... el numero indica la cantidad de caracteres que van a quedar
 	$b=substr($cadena, 2); // elimina solo los 2 primeros... el numero indica la cantidad de caracteres que serán eliminados del principio de la cadena
 	echo $a." | ".$b."<br>";// imprime variables por pantalla
-	$c=substr($cadena, 3,2);
-	$d=substr($cadena, -3,2);
-	$e=substr($cadena, 3,-2);
-	$f=substr($cadena, -3,-2);
-
-	
-
+	$c=substr($cadena, 3,2);//elimina los 3 primeros caract y los ultimos 2 finales
+	$d=substr($cadena, -3,2);//elimina los 6 primeros caract y el ultimo
+	echo $c." | ".$d."<br>";
+	$e=substr($cadena, 3,-2);//elimina los 3 primeros caract y el ultimo
+	$f=substr($cadena, -3,-2);// elimina los 3 primeros seguidos de la cadena ant. y los dos ultimos
+	echo $e." | ".$f."<br>";
+	$g=substr($cadena, 5);
+	$h=substr($cadena,0, -5);
+	echo $g." | ".$h."<br>";
 
 
 
