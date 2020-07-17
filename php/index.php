@@ -125,9 +125,9 @@
 	echo $g." | ".$h."<br>";
 
 	//ejercicio
-	$cadena="";
-	$num1=0;
-	$num2=0;
+	$cadena="Franklin Rafael Garcia Tovar";
+	$num1=4;
+	$num2=-2;
 
 	$resultado=substr($cadena, $num1,$num2);
 
