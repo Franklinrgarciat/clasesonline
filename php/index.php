@@ -124,7 +124,14 @@
 	$h=substr($cadena,0, -5);// elimina los ultimos cinco caract de la cadena
 	echo $g." | ".$h."<br>";
 
+	//ejercicio
+	$cadena="";
+	$num1=0;
+	$num2=0;
 
+	$resultado=substr($cadena, $num1,$num2);
+
+	echo $resultado."<br>";
 
 
 
