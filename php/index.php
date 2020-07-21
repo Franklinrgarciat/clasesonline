@@ -11,6 +11,9 @@
 //hola characo//
 	/*hola mundo*/
 	echo "<h1> BIENVENIDOS A PHP</h1></br>";
+	?> 
+	<a href="ejercicio1.php" title="" style="text-decoration: none">* Ejercicio1</a><br>
+	<?php
 	$minombre="Franklin Garcia";
 	$cedula=95756273;
 	//formas de imprimir variables
