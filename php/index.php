@@ -53,6 +53,7 @@
 	$sumar=$numero1+$numero2;
 	echo "La suma entre ".$numero1." y ".$numero2." es : ".$sumar;
 	echo "<br>";
+	echo "<hr>";
 	//resta
 	$n1=10;
 	$n2=5;
@@ -88,6 +89,7 @@
 	$raiz=pow($n1,1/2);
 	echo "La raiz cuadrada de ".$n1." es: ".round($raiz,2);
 	echo "<br>";
+	echo "<hr>";
 
 	//cadenas de caracteres
 	$mi_cadena="     Franklin Rafael Garcia Tovar      ";
@@ -115,7 +117,7 @@
 	$b=substr($cadena, 2); // elimina solo los 2 primeros... el numero indica la cantidad de caracteres que serán eliminados del principio de la cadena
 	echo $a." | ".$b."<br>";// imprime variables por pantalla
 	$c=substr($cadena, 3,2);//elimina los 3 primeros caract y muestra los siguientes dos caract de la cadena
-	$d=substr($cadena, -3,2);//corre 3 lugares en forma decendente y muestra los dos solicitados y elimina el resto
+	$d=substr($cadena, -3,2);//corre 3 lugares de izquierda a derecha y muestra los dos solicitados y elimina el resto
 	echo $c." | ".$d."<br>";
 	$e=substr($cadena, 3,-2);//elimina los 3 primeros caract y los 2 ultimos
 	$f=substr($cadena, -3,-2);//empieza a contar desde los 3 ultimos y elimina los dos ultimos de la cadena
@@ -132,7 +134,75 @@
 	$resultado=substr($cadena, $num1,$num2);
 
 	echo $resultado."<br>";
+	echo "<hr>";
 
+	// operadores incremento y decremento
+	$year= 2020;
+	$year++;
+	echo "<h1>$year</h1>";
+	echo "<br>";
+	$year= 2020;
+	$year--;
+	echo "<h1>$year</h1>";
+	echo "<hr>";
+	// operadores de asignacion, lo puedo hacer con cualquier signo que quiera darle valor a una variable
+	$edad=55;
+
+	echo $edad."<br>";
+	echo ($edad+=5)."<br>";
+	echo "<hr>";
+
+	/*Condicional if
+	if(condicion){
+		instruciones
+	}else{
+		otras instruciones
+	}
+
+	//operadores de comparecion
+	== igual
+	=== identico
+	!= distinto
+	<> diferente
+	!== no identico
+	< menor que
+	> mayor que
+	<= menor o igual que
+	>= mayor igual que
+	*/
+	$color= "verde";
+	if($color=="rojo"){
+		echo "el color es rojo";
+	}else{
+		echo "el color no es rojo";
+	}
+	echo "<br>";
+
+
+	$yearr = 2020;
+	if ($yearr==2020){
+		echo "estamos en el 2020";
+	}else{
+		echo "no estamos en el 2020";
+	}
+	echo "<br>";
+
+	$nombre= "Cesar Characo";
+	$pais="honduras";
+	$cuidad= "San Juan";
+	$yearrr=42;
+	$mayoria_edad=18;
+
+	if($yearrr>=$mayoria_edad){
+		echo "el señor ".$nombre." es mayor de edad";
+		if ($pais=="venezuela"){
+		echo " y es de ".$cuidad;
+	}else{
+		echo "el señor no es venezolano";
+	}
+	}else{
+		echo $nombre."no es mayor de edad";
+	}
 
 
 
