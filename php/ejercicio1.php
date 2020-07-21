@@ -15,23 +15,25 @@ echo "Las edades son:
 <br>La edad de Cesar es: ".$cesar."
 <br>La edad de Miguel es: ".$miguel."<br>";
 
-if($frank<$cesar&&$cesar<$miguel){
+if($frank<$cesar  &&  $cesar<$miguel){
 	echo "el menor es frank, el segundo es cesar, el mayor es miguel";
-}elseif($frank<$miguel&&$miguel<$cesar){
+}elseif($frank<$miguel && $miguel<$cesar){
 	echo "el menor es frank el segundo es miguel y el mayor cesar";
-}elseif($cesar<$frank&&$frank<$miguel){
+}elseif($cesar<$frank && $frank<$miguel){
 	echo "el menor es cesar, el segundo es frank y el mayor miguel";
-}elseif($cesar<$miguel&&$miguel<$frank){
-	echo "el menor es cesar, el segundo miguel y el mayor cesar";
-}elseif($miguel<$frank&&$frank<$cesar){
+}elseif($cesar<$miguel && $miguel<$frank){
+	echo "el menor es cesar, el segundo miguel y el mayor frank";
+}elseif($miguel<$frank && $frank<$cesar){
 	echo "el menor es miguel, el segundo es frank y el mayor cesar";
-}elseif($miguel<$cesar&&$cesar<$frank){
+}elseif($miguel<$cesar && $cesar<$frank){
 	echo "el menor es miguel, el segundo es cesar y el mayor frank";
-}elseif($frank<$cesar&&$cesar<=$miguel){
-	echo "el menor es frank, el resto iguales"
-}elseif($cesar<$frank&&$frank<=$miguel){
-	echo "el menor es cesar, el resto iguales"
-}elseif($miguel<$cesar&&$cesar<=$frank){
-	echo "el menor es miguel, el resto iguales"
+}elseif($frank<$cesar && $cesar==$miguel){
+	echo "el menor es frank, Miguel y Cesar son los mayores";
+}elseif($cesar<$frank && $frank==$miguel){
+	echo "el menor es cesar, Frank y Miguel son los mayores";
+}elseif($miguel<$cesar && $cesar==$frank){
+	echo "el menor es miguel, y Cesar y Frank son los mayores";
+}elseif($miguel==$cesar && $cesar==$frank){
+	echo "Todos tienen la misma edad";
 }
 ?>
