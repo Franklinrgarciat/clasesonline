@@ -13,6 +13,8 @@
 	echo "<h1> BIENVENIDOS A PHP</h1></br>";
 	?> 
 	<a href="ejercicio1.php" title="" style="text-decoration: none">* Ejercicio1</a><br>
+	<a href="ejercicio2.php" title="" style="text-decoration: none">* Ejercicio2</a><br>
+	<a href="ejercicio3.php" title="" style="text-decoration: none">* Ejercicio3</a><br>
 	<?php
 	$minombre="Franklin Garcia";
 	$cedula=95756273;
