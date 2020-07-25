@@ -51,13 +51,13 @@ extract($_REQUEST);
 		if($mensaje==1){
 		?>
 		<div class="alert alert-primary" role="alert">
-		  NO PUEDE HACERLO
+		  PUEDE COMPRAR
 		</div>
 	<?php
 		}else{
 		?>
 		<div class="alert alert-primary" role="alert">
-		  SI PUEDE HACERLO
+		  NO PUEDE HACERLO
 		</div>
 	<?php	
 		}
@@ -68,8 +68,8 @@ extract($_REQUEST);
 	<label>Nombre</label> <input type="text" name="nombre" value="" placeholder="Ingrese su Nombre"><br>
 	<label>Apellido</label> <input type="text" name="apellido" value="" placeholder="Ingrese su Apellido"><br>
 	<label>Edad</label> <input type="text" name="edad" value="" placeholder="Ingrese su Edad"><br>
-	<label>Cedula</label> <input type="text" name="cedula" value="" placeholder="Ingrese su Cedula"><br>
-	<label>Telefono</label> <input type="text" name="telefono" value="" placeholder="Ingrese su Telefono"><br>
+	<label>Presupuesto</label> <input type="text" name="Presupuesto" value="" placeholder="Ingrese su Presupuesto"><br>
+	<label>Nacionalidad</label> <input type="text" name="Nacionalidad" value="" placeholder="Igrese su Nacionalidad"><br>
 	<div class="botones">
 	<input class="btn-primary" type="reset" name="Limpiar" value="Limpiar">
 	<input class="btn-info" type="submit" name="Enviar" value="Enviar">
