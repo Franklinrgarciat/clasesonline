@@ -51,27 +51,27 @@
 	*/
 
 	//suma
-	$numero1=3;
-	$numero2=6;
+	$numero1=rand(1,8);
+	$numero2=rand(1,8);
 	$sumar=$numero1+$numero2;
 	echo "La suma entre ".$numero1." y ".$numero2." es : ".$sumar;
 	echo "<br>";
 	echo "<hr>";
 	//resta
-	$n1=10;
-	$n2=5;
+	$n1=rand(10,20);
+	$n2=rand(5,7);
 	$restar=$n1-$n2;
 	echo "La resta entre ".$n1." y ".$n2." es: ".$restar;
 	echo "<br>";
 	//multiplicacion
-	$n1=4;
-	$n2=5;
+	$n1=rand(4,20);
+	$n2=rand(1,20);
 	$producto=$n1*$n2;
 	echo "El producto entre ".$n1." y ".$n2." es: ".$producto;
 	echo "<br>";
 	//division
-	$n1=20;
-	$n2=2;
+	$n1=rand(18,30);
+	$n2=rand(20,25);
 	$division=$n1/$n2;
 	echo "La división entre ".$n1." y ".$n2." es: ".$division;
 	echo "<br>";
@@ -95,13 +95,13 @@
 	echo "<hr>";
 
 	//cadenas de caracteres
-	$mi_cadena="     Franklin Rafael Garcia Tovar      ";
+	$mi_cadena="Franklin Rafael Garcia Tovar";
 	//longitud
 	$longitud=strlen($mi_cadena);
 	echo "La longitud de la cadena: (".$mi_cadena.") es: ".$longitud;
 	echo "<br>";
 	//reemplazo
-	$reemplazo=str_replace(' ', '_', $mi_cadena);
+	$reemplazo=str_replace(' ', 'y', $mi_cadena);
 	echo "Reemplazando espacios por _ de la cadena:<br>".$reemplazo;
 	echo "<br>";
 	$reemplazo=str_replace('a', 'i', $mi_cadena);
