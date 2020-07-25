@@ -1,3 +1,7 @@
+<?php 
+extract($_REQUEST);
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,8 +12,12 @@
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<style type="text/css" media="screen">
 		*{
-			background-color: black;
+			color: white;
+			background-color: green;
 			font-family: Arial;
+		}
+		label{
+			background-color: #666;		
 		}
 		.navbar-header{
 	background-color: white;
@@ -25,7 +33,8 @@
 	font-size: 20px
 		}
 		.botones{
-			color: white;
+			background-color: #666;
+
 		}
 	</style>
 </head>
@@ -35,19 +44,40 @@
 	
 	<h4>Mi Primer Formulario</h4>
 	</div>
+	<?php 
+	//echo $mensaje;
+	if (isset($mensaje) ) {
+
+		if($mensaje==1){
+		?>
+		<div class="alert alert-primary" role="alert">
+		  NO PUEDE HACERLO
+		</div>
+	<?php
+		}else{
+		?>
+		<div class="alert alert-primary" role="alert">
+		  SI PUEDE HACERLO
+		</div>
+	<?php	
+		}
+	}?>
+	<form action="ejercicio4_submit.php" method="post" name="miformulario" enctype="Multipart/Form-data" accept-charset="utf-8" >
+		
 	<div class="form" align="center" >
-	<label>Nombre <input type="text" name="nombre" value="" placeholder="Ingrese su Nombre"></label><br>
-	<label>Apellido <input type="text" name="apellido" value="" placeholder="Ingrese su Apellido"></label><br>
-	<label>Edad <input type="text" name="edad" value="" placeholder="Ingrese su Edad"></label><br>
-	<label>Cedula <input type="text" name="cedula" value="" placeholder="Ingrese su Cedula"></label><br>
-	<label>Telefono <input type="text" name="telefono" value="" placeholder="Ingrese su Telefono"></label><br>
+	<label>Nombre</label> <input type="text" name="nombre" value="" placeholder="Ingrese su Nombre"><br>
+	<label>Apellido</label> <input type="text" name="apellido" value="" placeholder="Ingrese su Apellido"><br>
+	<label>Edad</label> <input type="text" name="edad" value="" placeholder="Ingrese su Edad"><br>
+	<label>Cedula</label> <input type="text" name="cedula" value="" placeholder="Ingrese su Cedula"><br>
+	<label>Telefono</label> <input type="text" name="telefono" value="" placeholder="Ingrese su Telefono"><br>
 	<div class="botones">
-	<label><input class="primary" type="reset" name="Limpiar" value="Limpiar"></label>
-	<label><input class="default" type="submit" name="Enviar" value="Enviar"></label>		
+	<input class="btn-primary" type="reset" name="Limpiar" value="Limpiar">
+	<input class="btn-info" type="submit" name="Enviar" value="Enviar">
 		
 	</div>
 	</div>
 	
+	</form>
 </div>
 </body>
 <script src="jquery.js"></script>

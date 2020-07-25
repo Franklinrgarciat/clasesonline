@@ -14,7 +14,7 @@ echo "<hr>";
 $contador =0;
 while($contador<=20){
 	$cuadrado = $contador*$contador;
-	echo "el cuadrado $contador es el $cuadrado"." - ";
+	echo "el cuadrado ".$contador." es el $cuadrado"." - ";
 	$contador++;
 }
 echo "<br><hr>";
@@ -129,14 +129,14 @@ echo "<br><hr>";
 $nombre= "adrian";
 $caja=20.000;
 $cuenta=20.000;
-$nacionalidad="venezolano";
-if($nacionalidad=="venezolano"&&$cuenta>=$caja){
+$nacionalidad = "venezolano";
+if($nacionalidad == "venezolano" && $cuenta >= $caja){
 	echo "$nombre puede comprar porque cumple con los requisitos";
-}elseif($cuenta<$caja&&$nacionalidad=="venezolano"){
+}elseif($cuenta < $caja && $nacionalidad == "venezolano"){
 	echo "$nombre es $nacionalidad pero no tiene el dinero suficiente";
-}elseif($caja<=$cuenta&&$nacionalidad!="venezolano"){
+}elseif($caja <= $cuenta && $nacionalidad != "venezolano"){
 	echo "$nombre tiene el dinero suficiente, pero no es Venezolano";
-}elseif($cuenta<$caja&&$nacionalidad!="venezolano"){
+}elseif($cuenta < $caja && $nacionalidad != "venezolano"){
 	echo "el cliente no reune los requisitos";
 }
 echo "<br><hr>";
