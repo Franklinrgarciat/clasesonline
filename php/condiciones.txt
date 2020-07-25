@@ -7,3 +7,4 @@ condiciones para comprar la casa
 	entonces podrá comprar la casa pagando en 24 cuotas.
 	la diferencia a pagar será con un 15% del valor de la casa.
 3.- si el monto es menor a 25% no podrá comprar la casa.
+
