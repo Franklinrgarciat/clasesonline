@@ -58,9 +58,9 @@ extract($_REQUEST);
 				?>
 			<div class="alert alert-primary" role="alert">
 				<?php if($mensaje==0){
-			 		echo "Monto restante a pagar:".$resta." en ".$cuotas." cuotas de ".$cuota." c/u";
+			 		echo "Si puede comprar; Monto restante a pagar:".$resta." en ".$cuotas." cuotas de ".$cuota." c/u";
 				}else{
-					echo "NO PUEDE HACERLO";
+					echo "NO PUEDE COMPRAR, DICULPE!!";
 				} ?>
 			</div>
 	<?php	} ?>		
