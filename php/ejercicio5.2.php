@@ -26,27 +26,27 @@ if($nombre!="" && $apellido!="" && $edad!="" && $nacionalidad!="" && $cedula!=""
 				$cuotas=24;
 				$cuota=$resta/$cuotas;
 				$mensaje=0;
-				header('Location: ejercicio5.1php?mensaje='.$mensaje."&resta=".$resta."&cuotas=".$cuotas."&cuota=".$cuota);
+				header('Location: ejercicio5.1.php?mensaje='.$mensaje."&resta=".$resta."&cuotas=".$cuotas."&cuota=".$cuota);
 			}else{
 				
 				$mensaje=1;
-				header('Location: ejercicio5.1php?mensaje='.$mensaje);
+				header('Location: ejercicio5.1.php?mensaje='.$mensaje);
 			}
 			
 		} else {
 			
 			$mensaje=1;
-			header('Location: ejercicio5.1php?mensaje='.$mensaje);
+			header('Location: ejercicio5.1.php?mensaje='.$mensaje);
 		}
 	} else {
 		
 		$mensaje=1;
-		header('Location: ejercicio5.1php?mensaje='.$mensaje);
+		header('Location: ejercicio5.1.php?mensaje='.$mensaje);
 	}
 }else{
 	
 	$mensaje=1;
-	header('Location: ejercicio5.1php?mensaje='.$mensaje);
+	header('Location: ejercicio5.1php.?mensaje='.$mensaje);
 	
 }
 
