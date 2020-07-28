@@ -30,17 +30,42 @@
 			<div class="col-md-2">
 				
 			</div>
-			<div class="col-md-4">
-				<label>Nombre</label><br>
-					<input type="text" name="nombre" value="" placeholder="Ingrese su nombre">
-			<div class="col-md-4">
-				<label>Apellido</label><br>
-					<input type="text" name="nombre" value="nombre" placeholder="Ingrese su nombre">
-
-				
-  <button class="btn btn-primary" type="submit">Submit form</button>
+			<div>
+		<div>
+			<?php 
+			if (isset($mensaje) ) {
+				?>
+			<div class="alert alert-primary" role="alert">
+				<?php if($mensaje==0){
+			 		echo "Si puede comprar; Monto restante a pagar:".$resta." en ".$cuotas." cuotas de ".$cuota." c/u";
+				}else{
+					echo "NO PUEDE COMPRAR, DICULPE!!";
+				} ?>
+			</div>
+	<?php	} ?>		
+		</div>
+	</div>
+			<div class="col-md-8">
+			<div class="form-group" align="center">
+				<h4>Complete los Datos Sugeridos a Continuacion</h4><br>
+				<form action="ejercicio5.2.php" method="post" name="miformulario" enctype="Multipart/Form-data" accept-charset="utf-8" >
+				<label>Nombre</label>
+					<input type="text" name="nombre" value="" required="required" placeholder="Ingrese su nombre"><br><br>
+				<label>Apellido</label>
+					<input type="text" name="apellido" value="" required="required" placeholder="Ingrese su Apellido"><br><br>
+				<label>Cedula</label>
+					<input type="number" name="cedula"  required="required" placeholder="Ingrese su Cedula"><br><br>
+				<label>Edad</label>
+					<input type="number" name="edad" value="" required="required" maxlength="2" minlength="2" placeholder="Ingrese su Edad"><br><br>
+				<label>Valor de la casa</label>
+					<input type="number" name="monto_casa" value="" required="required" placeholder="Ingrese el Valor "><br><br>
+				<label>Presupuesto</label>
+					<input type="number" name="presupuesto" value="" required="required" placeholder="Ingrese su Presupuesto"><br>
+				<br>
+  <button class="btn btn-primary" type="submit">Enviar Formulario</button>
 			</div>
 			
+	</form>
 		</div>
 	</div>
 	

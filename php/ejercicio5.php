@@ -99,7 +99,7 @@
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="http://localhost/clasesonline/php/ejercicio4.phhttp://localhost/clasesonline/php/ejercicio4.php" class="btn btn-primary">Cotizar</a>
+      <a href="http://localhost/clasesonline/php/ejercicio5.1.php" class="btn btn-primary">Cotizar</a>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -108,7 +108,7 @@
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="http://localhost/clasesonline/php/ejercicio4.php" class="btn btn-primary">Cotizar</a>
+      <a href="http://localhost/clasesonline/php/ejercicio5.1.php" class="btn btn-primary">Cotizar</a>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -117,7 +117,7 @@
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="#" class="btn btn-primary">Cotizar</a>
+      <a href="http://localhost/clasesonline/php/ejercicio5.1.php" class="btn btn-primary">Cotizar</a>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -132,7 +132,7 @@
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="http://localhost/clasesonline/php/ejercicio4.php" class="btn btn-primary">cotizar</a>
+      <a href="http://localhost/clasesonline/php/ejercicio5.1.php" class="btn btn-primary">cotizar</a>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -141,7 +141,7 @@
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="http://localhost/clasesonline/php/ejercicio4.php" class="btn btn-primary">Cotizar</a>
+      <a href="http://localhost/clasesonline/php/ejercicio5.1.php" class="btn btn-primary">Cotizar</a>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -150,7 +150,7 @@
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="http://localhost/clasesonline/php/ejercicio4.php" class="btn btn-primary">Cotizar</a>
+      <a href="http://localhost/clasesonline/php/ejercicio5.1.php" class="btn btn-primary">Cotizar</a>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -162,7 +162,7 @@
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="http://localhost/clasesonline/php/ejercicio4.php" class="btn btn-primary">Cotizar</a>
+      <a href="http://localhost/clasesonline/php/ejercicio5.1.php" class="btn btn-primary">Cotizar</a>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -171,7 +171,7 @@
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="http://localhost/clasesonline/php/ejercicio4.php" class="btn btn-primary">Cotizar</a>
+      <a href="http://localhost/clasesonline/php/ejercicio5.1.php" class="btn btn-primary">Cotizar</a>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
@@ -180,7 +180,7 @@
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <a href="http://localhost/clasesonline/php/ejercicio4.php" class="btn btn-primary">Cotizar</a>
+      <a href="http://localhost/clasesonline/php/ejercicio5.1.php" class="btn btn-primary">Cotizar</a>
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
