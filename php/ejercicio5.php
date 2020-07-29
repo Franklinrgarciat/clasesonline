@@ -225,6 +225,9 @@
 	</div>
 	
 </div>
+<footer style="text-align: center;">
+		<br><i><b>Por Franklin Garcia - Inmo-Lider-SRL<b></i><br>
+	</footer>
 
 
 

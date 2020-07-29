@@ -4,9 +4,9 @@ extract($_REQUEST);
 //echo $_POST['nombre'];
 //echo $nombre." ".$apellido." ".$cedula;
 
-if($nombre!="" && $apellido!="" && $edad!="" && $nacionalidad!="" && $cedula!="" && $monto_casa!="" && $presupuesto!=""){
+if($nombre!="" && $apellido!="" && $edad!="" && $cedula!="" && $monto_casa!="" && $presupuesto!=""){
 		
-	if ($nacionalidad=="V") {
+	
 		if ($edad>=18) {
 			# verificacion cuando es mayor o igual a 50%
 			$porcentaje_50=(50*$monto_casa)/100;
@@ -38,15 +38,11 @@ if($nombre!="" && $apellido!="" && $edad!="" && $nacionalidad!="" && $cedula!=""
 			$mensaje=1;
 			header('Location: ejercicio5.1.php?mensaje='.$mensaje);
 		}
-	} else {
-		
-		$mensaje=1;
-		header('Location: ejercicio5.1.php?mensaje='.$mensaje);
-	}
+	
 }else{
 	
 	$mensaje=1;
-	header('Location: ejercicio5.1php.?mensaje='.$mensaje);
+	header('Location: ejercicio5.1.php?mensaje='.$mensaje);
 	
 }
 

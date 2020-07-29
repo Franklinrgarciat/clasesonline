@@ -11,26 +11,34 @@
 </head>
 <style type="text/css" media="screen">
 	*{
-		background-color: #;
+		background-color: #D8D8D8;
 	}
+	h4{
+		background-color: #A4A4A4;
+		text-align: center;
+		padding: 20px;
+	}
+
 	
 </style>
 <body>
 
 	
-		<div class="jumbotron jumbotron-fluid">
+		<div class="header">
   <div class="container">
     <h1 class="display-4">INMO-LIDER</h1>
-    <p class="lead"><b>Soluciones inmoviliarias, Compra, Ventas, Consultas y Asesoriamiento Profesional.</b></p>
+    <p class="lead"><b>Soluciones inmoviliarias, Compra, Ventas, Consultas y Asesoriamiento Profesional.</b></p><br>
+
+	<h4>Complete los Datos Sugeridos a Continuacion</h4><br>
   </div>
 		
 	</div>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-2">
 				
 			</div>
-			<div>
+		
 		<div>
 			<?php 
 			if (isset($mensaje) ) {
@@ -44,30 +52,43 @@
 			</div>
 	<?php	} ?>		
 		</div>
-	</div>
-			<div class="col-md-8">
-			<div class="form-group" align="center">
-				<h4>Complete los Datos Sugeridos a Continuacion</h4><br>
+	
+		
+			<div class="col-md-4">
+			<div class="form-group" align="right">
 				<form action="ejercicio5.2.php" method="post" name="miformulario" enctype="Multipart/Form-data" accept-charset="utf-8" >
-				<label>Nombre</label>
-					<input type="text" name="nombre" value="" required="required" placeholder="Ingrese su nombre"><br><br>
-				<label>Apellido</label>
-					<input type="text" name="apellido" value="" required="required" placeholder="Ingrese su Apellido"><br><br>
-				<label>Cedula</label>
-					<input type="number" name="cedula"  required="required" placeholder="Ingrese su Cedula"><br><br>
-				<label>Edad</label>
-					<input type="number" name="edad" value="" required="required" maxlength="2" minlength="2" placeholder="Ingrese su Edad"><br><br>
-				<label>Valor de la casa</label>
-					<input type="number" name="monto_casa" value="" required="required" placeholder="Ingrese el Valor "><br><br>
-				<label>Presupuesto</label>
-					<input type="number" name="presupuesto" value="" required="required" placeholder="Ingrese su Presupuesto"><br>
+					<div class="datos">
+						<br><br><br><br>
+				<ul>
+							
+				<label><li>Nombre</li></label><br><br>
+				<label><li>Apellido</li></label><br><br>
+				<label><li>Cedula</li></label><br><br>
+				<label><li>Edad</li></label><br><br>
+				<label><li>Valor de la casa</li></label><br><br>
+				<label><li>Presupuesto</li></label><br><br>
 				<br>
-  <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+						</ul>		
+					</div>
+		</div>
+			</div>
+			<div class="col-md-4">
+				<br><br><br><br>
+					<input type="text" name="nombre" value="" style="background-color: white;" required="required" placeholder="Ingrese su nombre"><br><br>
+					<input type="text" name="apellido" value="" style="background-color: white;" required="required" placeholder="Ingrese su Apellido"><br><br>
+					<input type="number" name="cedula"  style="background-color: white;" required="required" placeholder="Ingrese su Cedula"><br><br>
+					<input type="number" name="edad" value="" style="background-color: white;" required="required" maxlength="2" minlength="2" placeholder="Ingrese su Edad"><br><br>
+					<input type="number" name="monto_casa" style="background-color: white;" value="" required="required" placeholder="Ingrese el Valor "><br><br>
+					<input type="number" name="presupuesto" style="background-color: white;" value="" required="required" placeholder="Ingrese su Presupuesto"><br><br>
+  <a href="http://localhost/clasesonline/php/ejercicio5.2.php" class="btn btn-primary" type="submit">Enviar Formulario</a>
 			</div>
 			
 	</form>
-		</div>
+	
 	</div>
+	<footer style="text-align: center;">
+		<br><i><b>Por Franklin Garcia - Inmo-Lider-SRL<b></i><br>
+	</footer>
 	
 </body>
 <script src="jquery.js"></script>
