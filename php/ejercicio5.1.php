@@ -18,6 +18,9 @@
 		text-align: center;
 		padding: 20px;
 	}
+	.form{
+		background-color: #F2F2F2;
+	}
 
 	
 </style>
@@ -33,6 +36,7 @@
   </div>
 		
 	</div>
+			<form action="ejercicio5.2.php" method="post" name="miformulario" enctype="Multipart/Form-data" accept-charset="utf-8" >
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-4">
@@ -57,42 +61,68 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-2">
+			<div class="col-sm-4">
 				
 			</div>
-			<form action="ejercicio5.2.php" method="post" name="miformulario" enctype="Multipart/Form-data" accept-charset="utf-8" >
-			<div class="col-md-4">
-				<div class="form-group" align="right">
-					<div class="datos">
-						<ul>
-							<label class="label"><li>Nombre</li></label><br><br>
-							<label><li>Apellido</li></label><br><br>
-							<label><li>Cedula</li></label><br><br>
-							<label><li>Edad</li></label><br><br>
-							<label><li>Valor de la casa</li></label><br><br>
-							<label><li>Presupuesto</li></label><br><br>
-							<br>
-						</ul>		
-					</div>
-				</div>
+			<div class="col-sm-1 form-group">
+				<label for="apellido">Cedula</label>
 			</div>
-			<div class="col-md-4 form-group">
-				<br><br><br><br>
-					<input type="text" class="form-control" name="nombre" value="" style="background-color: white;" required="required" placeholder="Ingrese su nombre"><br><br>
-					<input type="text" class="form-control" name="apellido" value="" style="background-color: white;" required="required" placeholder="Ingrese su Apellido"><br><br>
-					<input type="number" class="form-control" name="cedula"  style="background-color: white;" required="required" placeholder="Ingrese su Cedula"><br><br>
-					<input type="number" class="form-control" name="edad" value="" style="background-color: white;" required="required" maxlength="2" minlength="2" placeholder="Ingrese su Edad"><br><br>
-					<input type="number" class="form-control" name="monto_casa" style="background-color: white;" value="" required="required" class="form-control" placeholder="Ingrese el Valor "><br><br>
-					<input type="number" class="form-control" name="presupuesto" style="background-color: white;" value="" required="required" placeholder="Ingrese su Presupuesto"><br><br>
-  					<a href="http://localhost/clasesonline/php/ejercicio5.2.php" class="btn btn-primary" type="submit">Enviar Formulario</a>
+			<div class="col-sm-4 form-group">
+				<input type="number" name="cedula" placeholder="Ej: 12345678" class="form-control">
 			</div>
-			
-			</form>
+
 		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				
+			</div>
+			<div class="col-sm-1 form-group">
+				<label for="apellido">Edad</label>
+			</div>
+			<div class="col-sm-4 form-group">
+				<input type="number" name="edad" placeholder="Ej: 20" class="form-control">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				
+			</div>
+			<div class="col-sm-1 form-group">
+				<label for="apellido">Valor de la Casa</label>
+			</div>
+			<div class="col-sm-4 form-group">
+				<input type="number" name="valor_casa" placeholder="Ej: 2000" class="form-control">
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-4">
+				
+			</div>
+			<div class="col-sm-1 form-group">
+				<label for="apellido">Presupuesto</label>
+			</div>
+			<div class="col-sm-4 form-group">
+				<input type="number" name="presupuesto" placeholder="Ej: 2000" class="form-control">
+			</div>
+		</div>
+			<div class="row">
+				<div class="col-sm-5">
+					
+				</div>
+				<div class="col-sm-6 form-group">
+					
+  					<a href="http://localhost/clasesonline/php/ejercicio5.2.php" class="btn btn-primary" type="submit">Enviar Formulario</a>
+				</div>
+				
+			</div>
+		
+			</div>
+			</form>
+			
 	<footer style="text-align: center;">
 		<br><i><b>Por Franklin Garcia - Inmo-Lider-SRL<b></i><br>
 	</footer>
-	</div>
+	
 </body>
 <script src="clasesonline/javascript/jquery.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
