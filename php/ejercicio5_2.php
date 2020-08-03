@@ -8,6 +8,7 @@ if($nombre!="" && $apellido!="" && $edad!="" && $cedula!="" && $monto_casa!="" &
 		
 	
 		if ($edad>=18) {
+
 			# verificacion cuando es mayor o igual a 50%
 			$porcentaje_50=(50*$monto_casa)/100;
 			$porcentaje_25=(25*$monto_casa)/100;

@@ -1,3 +1,6 @@
+<?php 
+extract($_REQUEST);
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -36,8 +39,35 @@
   </div>
 		
 	</div>
-			<form action="ejercicio5.2.php" method="post" name="miformulario" enctype="Multipart/Form-data" accept-charset="utf-8" >
+			<form action="ejercicio5_2.php" method="post" name="miformulario" enctype="Multipart/Form-data" accept-charset="utf-8" >
 	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<!-- <div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;"> -->
+					<?php 
+				if (isset($mensaje) ) {
+					?>
+					<div class="toast" id="mensajes" data-delay="6000" style="position: absolute; top: 0; right: 0;">
+					    <div class="toast-header">
+					      <img src="#" class="rounded mr-2" alt="">
+					      <strong class="mr-auto">Solicitud de Compra</strong>
+					      <small>status</small>
+					      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+					        <span aria-hidden="true">&times;</span>
+					      </button>
+					    </div>
+					    <div class="toast-body">
+					      <?php if($mensaje==0){
+						 		echo "Si puede comprar; Monto restante a pagar:".$resta." en ".$cuotas." cuotas de ".$cuota." c/u";
+							}else{
+								echo "NO PUEDE COMPRAR, DISCULPE!!";
+							} ?>
+					    </div>
+					</div>
+				<?php	} ?>
+				<!-- </div> -->
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-sm-4">
 				
@@ -91,7 +121,7 @@
 				<label for="apellido">Valor de la Casa</label>
 			</div>
 			<div class="col-sm-4 form-group">
-				<input type="number" name="valor_casa" placeholder="Ej: 2000" class="form-control">
+				<input type="number" name="monto_casa" placeholder="Ej: 2000" class="form-control">
 			</div>
 		</div>
 		<div class="row">
@@ -111,7 +141,8 @@
 				</div>
 				<div class="col-sm-6 form-group">
 					
-  					<a href="http://localhost/clasesonline/php/ejercicio5.2.php" class="btn btn-primary" type="submit">Enviar Formulario</a>
+  					<input type="submit" name="enviar" value="Enviar" class="btn-info">
+  					<input type="reset" name="limpiar" value="Limpiar" class="btn-danger">
 				</div>
 				
 			</div>
@@ -122,10 +153,32 @@
 	<footer style="text-align: center;">
 		<br><i><b>Por Franklin Garcia - Inmo-Lider-SRL<b></i><br>
 	</footer>
-	
+		
 </body>
-<script src="clasesonline/javascript/jquery.js"></script>
+<script src="../javascript/jquery.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+    	$("#mensajes").toast('show');
+	});
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </html>
