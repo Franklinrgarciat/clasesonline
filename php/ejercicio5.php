@@ -32,7 +32,7 @@
         <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://localhost/clasesonline/php/ejercicio4.php">Formularios</a>
+        <a class="nav-link" href="http://localhost/clasesonline/php/ejercicio5.1.php">Formularios</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contacto</a>

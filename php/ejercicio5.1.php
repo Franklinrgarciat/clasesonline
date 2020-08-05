@@ -51,7 +51,7 @@ extract($_REQUEST);
 					    <div class="toast-header">
 					      <img src="#" class="rounded mr-2" alt="">
 					      <strong class="mr-auto">Solicitud de Compra</strong>
-					      <small>status</small>
+					      <small>Proceso</small>
 					      <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
 					        <span aria-hidden="true">&times;</span>
 					      </button>
@@ -68,9 +68,11 @@ extract($_REQUEST);
 				<!-- </div> -->
 			</div>
 		</div>
+
+			
 		<div class="row">
-			<div class="col-sm-4">
-				
+			<div class="col-sm-3">
+	
 			</div>
 			<div class="col-sm-1 form-group">
 				<label for="nombre">Nombre</label>
@@ -80,7 +82,7 @@ extract($_REQUEST);
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				
 			</div>
 			<div class="col-sm-1 form-group">
@@ -91,7 +93,7 @@ extract($_REQUEST);
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				
 			</div>
 			<div class="col-sm-1 form-group">
@@ -103,7 +105,7 @@ extract($_REQUEST);
 
 		</div>
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				
 			</div>
 			<div class="col-sm-1 form-group">
@@ -114,7 +116,7 @@ extract($_REQUEST);
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				
 			</div>
 			<div class="col-sm-1 form-group">
@@ -125,7 +127,7 @@ extract($_REQUEST);
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				
 			</div>
 			<div class="col-sm-1 form-group">
@@ -149,6 +151,7 @@ extract($_REQUEST);
 		
 			</div>
 			</form>
+		
 			
 	<footer style="text-align: center;">
 		<br><i><b>Por Franklin Garcia - Inmo-Lider-SRL<b></i><br>
