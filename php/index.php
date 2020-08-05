@@ -17,6 +17,12 @@
 	<a href="ejercicio3.php" title="" style="text-decoration: none">* Ejercicio3</a><br>
 	<a href="ejercicio4.php" title="" style="text-decoration: none">* Ejercicio4</a><br>
 	<a href="ejercicio5.php" title="" style="text-decoration: none">* Ejercicio5</a><br>
+	<h3>Praticas sencillas</h3><br>
+	<a href="arrays/indices.php" style="text-decoration: none">Practicas_indices</a><br>
+	<a href="cookies/index.php" style="text-decoration: none" >Practicas_cookies</a><br>
+	<a href="includes/practica1.php" style="text-decoration: none" >Practicas Includes</a><br>
+	<a href="sesiones/sesiones1.php" style="text-decoration: none" >Practicas de Sesiones</a><br><br>
+
 	<?php
 	$minombre="Franklin Garcia";
 	$cedula=95756273;
