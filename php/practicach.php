@@ -11,7 +11,8 @@
 	<H1>MI PRIMER FORMULARIO</H1><br>
 	<form action="practicach_submit.php" method="POST" enctype="multipart/form-data" accept-charset="utf-8">
 		<label for="numero">NUMERO DE COMPRA</label>
-		<p><input type="number" name="numero" autofocus="autofocus" minlength="2" required="requiered" placeholder="EJ: 2312"></p>
+		<p><input type="number" name="num1" autofocus="autofocus" minlength="2" required="requiered" placeholder="EJ: Numero Inicial"></p><br>
+		<p><input type="number" name="num2" autofocus="autofocus" minlength="2" required="requiered" placeholder="EJ: Numero Final"></p>
 		<input type="submit" name="Enviar">
 	</form>
 	
