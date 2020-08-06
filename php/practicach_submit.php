@@ -2,14 +2,12 @@
 extract($_REQUEST);
 
 
-$numero=[];
-for ($i=0; $i <= 100; $i++) { 
-	if (is_integer($numero)) {
-	echo $i." - ";
-		
-	}
+$mi_arreglo=[];
+for ($i=0; $i <= $numero; $i++) { 
+	$mi_arreglo[$i]=$i;
 }
-
-
+for ($i=0; $i <= $numero; $i++) { 
+	echo $mi_arreglo[$i]."-";
+}
 
  ?>
