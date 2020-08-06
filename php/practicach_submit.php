@@ -3,13 +3,18 @@ extract($_REQUEST);
 
 
 $mi_arreglo=[];
-if ($num1 % 2 == 0 && $num2%2==0) {
-
-}for ($i=$num1; $i <= $num2; $i++) { 
-	$mi_arreglo[$i]=$i;
-}
+$x=0;
 for ($i=$num1; $i <= $num2; $i++) { 
-	echo $mi_arreglo[$i]."-";
+	if($i%2==0){
+		$mi_arreglo[$x]=$i;
+		$x++;
+	}
+}
+if (count($mi_arreglo)>0) {
+	for ($j=0; $j < count($mi_arreglo); $j++) { 
+		echo $mi_arreglo[$j]."-";
+
+	}
 }
 
  ?>
