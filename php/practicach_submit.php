@@ -3,7 +3,9 @@ extract($_REQUEST);
 
 
 $mi_arreglo=[];
-for ($i=$num1; $i <= $num2; $i++) { 
+if ($num1 % 2 == 0 && $num2%2==0) {
+
+}for ($i=$num1; $i <= $num2; $i++) { 
 	$mi_arreglo[$i]=$i;
 }
 for ($i=$num1; $i <= $num2; $i++) { 
