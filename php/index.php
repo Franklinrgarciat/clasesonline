@@ -23,7 +23,11 @@
 	<a href="includes/practica1.php" style="text-decoration: none" >Practicas Includes</a><br>
 	<a href="sesiones/sesiones1.php" style="text-decoration: none" >Practicas de Sesiones</a><br><br>
 	<a href="practicach.php" style="text-decoration: none" >Practicas de CHARACO</a><br><br>
+	<a href="formularios/formulario1.php" style="text-decoration: none" > Formulario Validado</a><br><br>
+	<a href="ficheros/fichero.php" style="text-decoration: none" > Ficheros</a><br><br>
+	<a href="cookies/index.php" style="text-decoration: none" > Cookies </a><br><br>
 
+	
 	<?php
 	$minombre="Franklin Garcia";
 	$cedula=95756273;
