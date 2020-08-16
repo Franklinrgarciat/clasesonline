@@ -27,7 +27,7 @@
 	<a href="ficheros/fichero.php" style="text-decoration: none" > Ficheros</a><br><br>
 	<a href="cookies/index.php" style="text-decoration: none" > Cookies </a><br><br>
 
-	
+	<a href="calculo_area.php" style="text-decoration: none" > calculo de area </a><br><br>
 	<?php
 	$minombre="Franklin Garcia";
 	$cedula=95756273;
