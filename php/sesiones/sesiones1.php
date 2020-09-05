@@ -4,12 +4,16 @@
 session_start();
 
 
-$sesion = '<h1>Esta es una sesion normal</h1>';
+$session = '<h1>Esta es una sesion normal</h1>';
 
 
 $_SESSION['variable_permanente'] = "<h2> Hola soy una sesion ACTIVA </h2>";
-
-echo  $sesion. "<br>";
+if (isset($_SESSION)) {
+	echo $_SESSION['variable_permanente'];
+}else{
+	echo "la sesion no existe";
+}
+echo  $session. "<br>";
 echo $_SESSION['variable_permanente'];
 
 

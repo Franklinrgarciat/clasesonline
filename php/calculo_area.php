@@ -4,15 +4,15 @@ extract($_REQUEST);
 
 if (isset($enviadas)) {
 	if (!empty($base) || !empty($altura)) {
-		$areat=$base*$altura/2;
-		$resultado1=false;
+		$areat = $base * $altura / 2;
+		$resultado1 = false;
 	}else{
 
 		$resultado1 = true;
 	}
 	if (!empty($ancho) || !empty($largo)) {
-		$arear=$ancho*$largo;
-		$resultado2=false;
+		$arear = $ancho * $largo;
+		$resultado2 = false;
 	}else{
 
 		$resultado2 = true;
