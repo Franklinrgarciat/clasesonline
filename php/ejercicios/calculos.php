@@ -12,7 +12,7 @@ if (!empty($base) && !empty($altura)) {
 }
 if (!empty($radio)) {
 	$radio = $radio
-	$calculo2 = 3,14 * pow($radio, 2);
+	$calculo2 = 3.14 * pow($radio, 2);
 	$calculo2 = true;
 }else{
 	$calculo2 = false;
