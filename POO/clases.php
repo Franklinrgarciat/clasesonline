@@ -14,7 +14,7 @@ tipos de datos primarios: int, float, double, char, string
  		variables->var2;
 */
 
-class Avion{
+/*class Avion{
 	public $motor="";
 	public $numAlas=0;
 	private $ventanas=0;
@@ -86,7 +86,7 @@ class Coche{
         return $info;
     }
 }
-
+*/
 class Repartidor{
     // atributos
     public $capacidad;
