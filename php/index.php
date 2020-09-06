@@ -29,6 +29,8 @@
 
 	<a href="calculo_area.php" style="text-decoration: none" > calculo de area </a><br><br>
 	<a href="ejercicios/new_calculo.php" style="text-decoration: none" > CALCULANDO AREAS </a><br><br>
+	<a href="../POO/index.php" title="">POO</a>
+	<br>
 	<?php
 	$minombre="Franklin Garcia";
 	$cedula=95756273;
