@@ -87,4 +87,19 @@ class Coche{
     }
 }
 
+class Repartidor{
+    // atributos
+    public $capacidad;
+    public $moto;
+    public $persona;
+
+    // funciones
+    public function Rapidez(){
+
+    }
+    public function transportar(){
+
+    }
+}
+$characo = new Repartidor();
 
