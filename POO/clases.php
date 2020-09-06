@@ -93,6 +93,10 @@ class Repartidor{
     public $moto;
     public $persona;
 
+    // Constructor
+    public function __construct($moto){
+        $this->moto = $m;
+
     // funciones
     public function Rapidez(){
 
@@ -101,5 +105,5 @@ class Repartidor{
 
     }
 }
-$characo = new Repartidor();
+$characo = new Repartidor(true);
 
