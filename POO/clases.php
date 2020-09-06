@@ -95,12 +95,13 @@ class Repartidor{
 
     // Constructor
     public function __construct($moto){
-        $this->moto = $m;
+        $this->moto = $moto;
 
     // funciones
     public function Rapidez(){
 
     }
+
     public function transportar(){
 
     }
