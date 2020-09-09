@@ -123,6 +123,7 @@ class SuperMercado{
 
     }*/
 // Creando metodos o Funciones
+    //métodos setters y getters
     public function Atender($empleado){
         $this->empleado = $empleado;
     }
@@ -386,18 +387,27 @@ class Configuracion{
     // creando Atributos
     public static $Color;
     public static $Volumen;
+    public static $contraste;
 // Creando Metodos o funciones
-    public static function setCambio(){
-        self::$Color;
+    public static function setCambio($color){
+        self::$Color=$color;
     }
     public static function setConfi(){
-        self::$Volumen;
+        self::$Volumen=230;
+    }
+    public static function setConfig($volumen,$contraste){
+        self::$Volumen=$volumen;
+        self::$contraste=$contraste;
     }
 }
 Configuracion::setCambio('Amarillo');
-Configuracion::setConfi(5);
+Configuracion::setConfi();
 
-echo Configuracion::$Color;
+echo Configuracion::$Color."<br>";
+echo Configuracion::$Volumen."<br>";
+Configuracion::setConfig(16,35);
+echo Configuracion::$Volumen."<br>";
+echo Configuracion::$contraste."<br>";
 // revisar
 echo "<br><br><hr>";
 echo "<h3>EJERCICIO 6 - Variables Constantes</h3>";
@@ -445,3 +455,6 @@ $Ordenador->Arrancar();
 $Ordenador->Encendido();
 $Ordenador->Apagado();
 var_dump($Ordenador);
+
+
+
