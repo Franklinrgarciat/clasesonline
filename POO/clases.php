@@ -456,5 +456,74 @@ $Ordenador->Encendido();
 $Ordenador->Apagado();
 var_dump($Ordenador);
 
+echo "<br><br><hr>";
+echo "<h3>EJERCICIO 8 - Interfaces de Clases</h3>";
+
+interface Compu{
+    public function encender();
+    public function guardar();
+    public function apagar();
+    public function desfragmentar();
+}
+class Imac implements Compu{
+    private $modelo;
+
+function getModelo(){
+    return $this->modelo;
+}
+function setModelo($modelo){
+    $this->modelo = $modelo;
+}
+public function Encender(){
+    return "Hago Algo";
+}
+public function Guardar(){
+    return "Hago Algo";
+}
+public function Apagar(){
+    return "Hago Algo";
+}
+public function Desfragmentar(){
+    return "Hago Algo";
+}
+}
+$Nuevapc = new Imac();
+$Nuevapc->setModelo('Nueva Imac');
+var_dump($Nuevapc);
+
+echo "<br><br><hr>";
+echo "<h3>EJERCICIO 9 - Traits / Sobrecargas </h3>";
+
+trait Utilidades{
+    public function MostrarNombre(){
+        echo "<h1> El Nombre es:".$this->nombre."</h1>";
+    }
+}
+class Auto{
+    public $nombre;
+    public $edad;
+    use Utilidades;
+}
+class Individuo{
+    public $nombre;
+    public $edad;
+    use Utilidades;
+}
+class Game{
+    public $nombre;
+    public $edad;
+    use Utilidades;
+}
+$ferrari = new Auto();
+$ferrari->nombre ='Ferrari Aventador';
+$ferrari->MostrarNombre();
+$gente = new Individuo();
+$gente->nombre ='Augusto';
+$gente->MostrarNombre();
+$juego = new Game();
+$juego->nombre = 'Fifa20';
+$juego->MostrarNombre();
+
+
 
 
