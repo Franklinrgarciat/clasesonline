@@ -8,6 +8,40 @@
 	<link rel="stylesheet" href="">
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <style type="text/css" media="screen">
+    .collapse {
+  height: auto;
+  width: auto;
+}
+
+.collapse.height {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.15s ease;
+  -moz-transition: height 0.15s ease;
+  -o-transition: height 0.15s ease;
+  transition: height 0.15s ease;
+}
+
+.collapse.width {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.15s ease;
+  -moz-transition: width 0.15s ease;
+  -o-transition: width 0.15s ease;
+  transition: width 0.15s ease;
+}
+
+.collapse.in.width {
+  width: auto;
+}
+
+.collapse.in.height {
+  height: auto;
+}
+  </style>
 </head>
 <body>
 	<div class="container">
@@ -116,6 +150,27 @@
   </div>
   </div>
 </div>
+<button role="button" class="btn-danger" data-toggle="collapse" data-target="#demo">
+      simple horizontal collapsible
+    </button>
+
+    <div id="demo" class="collapse in width">
+      <div style="width: 400px;">
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+    </div>
+
+    <!-- <button role="button" class="btn-danger" data-toggle="collapse" data-target="#demo2">
+      simple vertical collapsible
+    </button>
+
+    <div id="demo2" class="collapse in height">
+      <div style="width: 400px;">
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+      </div>
+</div> -->
   
   
 </body>
