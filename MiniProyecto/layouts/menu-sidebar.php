@@ -20,7 +20,7 @@
                                 <!-- /input-group -->
                             </li>
                             <li>
-                                <a href="<?=$ruta?>home.php" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                                <a href="<?=$ruta?>home.php" class="active"><i class="fa fa-dashboard fa-fw"></i> Inicio </a>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Personas<span class="fa arrow"></span></a>
@@ -29,13 +29,13 @@
                                         <a href="<?=$ruta?>controladores/PersonasController.php?operacion=index">Listado</a>
                                     </li>
                                     <li>
-                                        <a href="morris.html">Morris.js Charts</a>
+                                        <a href="<?=$ruta?>controladores/EmpresaController.php?operacion=index">Empresa ¿quienes somos?</a>
                                     </li>
                                 </ul>
                                 <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
+                                <a href="<?=$ruta?>controladores/RegistroController.php?operacion=registro"><i class="fa fa-table fa-fw"></i> Registrate!</a>
                             </li>
                             <li>
                                 <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>

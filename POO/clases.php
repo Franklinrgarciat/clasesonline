@@ -525,5 +525,30 @@ $juego->nombre = 'Fifa20';
 $juego->MostrarNombre();
 
 
+echo "<br><br><hr>";
+echo "<h3>EJERCICIO 10 Controladores de accesos a las variables</h3>";
+class Carro{
+    public $color;
+    protected $modelo;
+    private $marca;
 
-
+    public function __construct($color, $modelo, $marca){
+        $this->color = $color;
+        $this->modelo = $modelo;
+        $this->marca = $marca;
+    }
+    public function Color($color){
+        $this->color = $color;
+    }
+    public function setModelo($modelo){
+        $this->modelo = $modelo;
+    }
+    public function getMarca($marca){
+        $this->marca = $marca;
+    }
+}
+$carro1 = new Carro('Verde','A5','Audi');
+$carro1->color('plateado');
+$carro1->setModelo('VV8');
+$carro1->getMarca('BMW');
+var_dump($carro1);

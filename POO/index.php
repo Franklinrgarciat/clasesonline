@@ -20,7 +20,7 @@
 				<div class="form-group">
 					<ul class="list-group" style="display: inline-block;">
 						<li><a href="clases.php" title="">Clases</a></li>
-						<li>asasasww</li>
+						<li><a href="clases2.php" title="">Clases 2</a></li>
 						<li>asasasccc</li>
 						<li>asasasrrr</li>
 					</ul>

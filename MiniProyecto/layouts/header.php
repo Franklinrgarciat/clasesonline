@@ -1,5 +1,5 @@
 <div class="navbar-header">
-                    <a class="navbar-brand" href="index.html">Startmin</a>
+                    <a class="navbar-brand" href="index.html">STORE FRANKLIN</a>
                 </div>
 
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -22,7 +22,7 @@
                             <li>
                                 <a href="#">
                                     <div>
-                                        <i class="fa fa-comment fa-fw"></i> New Comment
+                                        <i class="fa fa-comment fa-fw"></i> Actualizaciones
                                         <span class="pull-right text-muted small">4 minutes ago</span>
                                     </div>
                                 </a>
@@ -30,7 +30,7 @@
                             <li>
                                 <a href="#">
                                     <div>
-                                        <i class="fa fa-twitter fa-fw"></i> 3 New Followers
+                                        <i class="fa fa-twitter fa-fw"></i> 3 Nuevos Productos
                                         <span class="pull-right text-muted small">12 minutes ago</span>
                                     </div>
                                 </a>
@@ -38,7 +38,7 @@
                             <li>
                                 <a href="#">
                                     <div>
-                                        <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                        <i class="fa fa-envelope fa-fw"></i> Mensajes Enviados
                                         <span class="pull-right text-muted small">4 minutes ago</span>
                                     </div>
                                 </a>
@@ -46,7 +46,7 @@
                             <li>
                                 <a href="#">
                                     <div>
-                                        <i class="fa fa-tasks fa-fw"></i> New Task
+                                        <i class="fa fa-tasks fa-fw"></i> Presupuestos
                                         <span class="pull-right text-muted small">4 minutes ago</span>
                                     </div>
                                 </a>
@@ -54,7 +54,7 @@
                             <li>
                                 <a href="#">
                                     <div>
-                                        <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                        <i class="fa fa-upload fa-fw"></i> Nuevas Solicitudes
                                         <span class="pull-right text-muted small">4 minutes ago</span>
                                     </div>
                                 </a>
@@ -62,7 +62,7 @@
                             <li class="divider"></li>
                             <li>
                                 <a class="text-center" href="#">
-                                    <strong>See All Alerts</strong>
+                                    <strong>Mostrar mas Alertas</strong>
                                     <i class="fa fa-angle-right"></i>
                                 </a>
                             </li>
@@ -70,15 +70,15 @@
                     </li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                            <i class="fa fa-user fa-fw"></i> secondtruth <b class="caret"></b>
+                            <i class="fa fa-user fa-fw"></i> Administrador <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu dropdown-user">
-                            <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                            <li><a href="#"><i class="fa fa-user fa-fw"></i> Perfil de Usuario</a>
                             </li>
-                            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                            <li><a href="#"><i class="fa fa-gear fa-fw"></i> Ajustes</a>
                             </li>
                             <li class="divider"></li>
-                            <li><a href="controladores/LoginController.php?operacion=logout"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                            <li><a href="controladores/LoginController.php?operacion=logout"><i class="fa fa-sign-out fa-fw"></i> Cerrar Sesion </a>
                             </li>
                         </ul>
                     </li>
