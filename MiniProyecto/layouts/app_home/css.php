@@ -4,7 +4,7 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Startmin - Bootstrap Admin Theme</title>
+        <title>STORE FRANKLIN</title>
 
         <!-- Bootstrap Core CSS -->
         <link href="vistas/startmin-master/css/bootstrap.min.css" rel="stylesheet">
@@ -30,3 +30,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
         <![endif]-->
+        <!-- DataTables CSS -->
+        <link href="vistas/startmin-master/css/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+
+        <!-- DataTables Responsive CSS -->
+        <link href="vistas/startmin-master/css/dataTables/dataTables.responsive.css" rel="stylesheet">

@@ -14,3 +14,13 @@
 
         <!-- Custom Theme JavaScript -->
         <script src="../startmin-master/js/startmin.js"></script>
+        <!-- DataTables JavaScript -->
+        <script src="../startmin-master/js/dataTables/jquery.dataTables.min.js"></script>
+        <script src="../startmin-master/js/dataTables/dataTables.bootstrap.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#lista_personas').DataTable({
+                        responsive: true
+                });
+            });
+        </script>

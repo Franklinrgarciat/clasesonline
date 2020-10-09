@@ -1,63 +1,67 @@
 <?php 
 $namespace="Personas"; //para saber donde estas
 //contenido para saber que colocar
-$contenido = '<div class="row">
+extract($_REQUEST);
+$registros="";
+$personas=unserialize($personas);
+if ($filas>0) {
+    for ($i=0; $i < $filas; $i++) {
+        $num=$i+1; 
+        $registros.="<tr>
+                        <td>".$num."</td>
+                        <td>".$personas[$i]['nombres']."</td>
+                        <td>".$personas[$i]['apellidos']."</td>
+                        <td>".$personas[$i]['cedula']."</td>
+                        <td>".$personas[$i]['tipo']."</td>
+                        <td>".$personas[$i]['direccion']."</td>
+                    </tr>";
+    }
+} else {
+
+    $registros="<tr>
+                    <td align='center' colspan='5'>No existen registros</td>
+                </tr>";
+}
+
+$contenido ='<div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Personas</h1>
-                    <div>
-                    	<h3>Listado de Clientes Activos</h3>
-                    </div>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
-
-<div class="col-lg-6">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    Principales Clientes
-                                </div>
-                                <!-- /.panel-heading -->
-                                <div class="panel-body">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Nombre</th>
-                                                    <th>Apellido</th>
-                                                    <th>Email</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Franklin</td>
-                                                    <td>Garcia</td>
-                                                    <td>franklin@franklin.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>Luis</td>
-                                                    <td>Duarte</td>
-                                                    <td>luis@duarte.com</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>Cesar</td>
-                                                    <td>Characo</td>
-                                                    <td>ccesar@characo.com</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- /.table-responsive -->
-                                </div>
-                                <!-- /.panel-body -->
-                            </div>
-                            <!-- /.panel -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Listado de Personas
                         </div>
-                        <!-- /.col-lg-6 -->
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                             <table  class="table table-striped table-bordered table-hover"  id="lista_personas">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Nombres</th>
+                                            <th>Apellidos</th>
+                                            <th>Cédula</th>
+                                            <th>Tipo</th>
+                                            <th>Dirección</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>'.$registros.'
+                                        
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
                     </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-6 -->
+            </div>
                     <!-- /.row -->';
 ?>
 <?php

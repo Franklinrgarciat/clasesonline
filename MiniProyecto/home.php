@@ -1,56 +1,110 @@
 
 <?php
 $namespace="home";
+$contenido='<div class="row">
+                        <div class="col-lg-12">
+                            <h1 class="page-header">Inicio</h1>
+                            <div>
+                                <h3>Bienvenidos a Store Frankklin</h3>
+                            </div>
+                            <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-comments fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">26</div>
+                                            <div>Consultas</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">Atencion Online</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
 
-$contenido = '<div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header" style="text-align: center;">Productos Destacados</h1>
-                </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-green">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-tasks fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">12</div>
+                                            <div>Promociones</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">Ver</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-yellow">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-shopping-cart fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">124</div>
+                                            <div>Mi Carrito</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">Ver Compra</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-red">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-support fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <div class="huge">INFO</div>
+                                            <div>Conocenos</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">Información</span>
+                                        <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                        </div>
                         <!-- /.col-lg-12 -->
-                </div>
-                <div class="row">
-                <div class="col-lg-12">
-                <div class="alert alert-success" role="alert">
-                <h4 class="alert-heading">10% de Descuento!</h4>
-                <p>Nuestra lista de Prouctos Destacados, se encuentra con descuento en toda la indumentaria seleccionada en la publicidad, Aprovecha antes que se agoten!</p>
-                <hr>
-                <p class="mb-0">Promocion valida desde 5 de Octubre 2020, hasta agotar el Stock!</p>
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4"> 
-
-                        <div class="Proucto">
-                        <img src="layouts/app/img/camisa.jpg" width="200px" alt="imagen camisa">
-                        <h2>Camisa Unicolor Ancha</h2>
-                        <p>200$</p>
-                        <a href="#">Comprar</a>  
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4"> 
-                        
-                        <div class="Proucto">
-                        <img src="layouts/app/img/camisa.jpg" width="200px" alt="imagen camisa">
-                        <h2>Camisa Unicolor Ancha</h2>
-                        <p>200$</p>
-                        <a href="#">Comprar</a>  
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4"> 
-                        
-                        <div class="producto">
-                        <img src="layouts/app/img/camisa.jpg" width="200px" alt="imagen camisa">
-                        <h2>Camisa Unicolor Ancha</h2>
-                        <p>200$</p>
-                        <a href="#">Comprar</a>  
-                        </div>
-                    </div>
-                </div>';
+                    </div>';
 
               
 require_once ('layouts/app-home.php');

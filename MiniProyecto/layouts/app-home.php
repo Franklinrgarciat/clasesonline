@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <?php include('app_home/css.php'); ?>
+        <?php include('modelos/clasedb.php'); ?>
     </head>
     <body>
 
