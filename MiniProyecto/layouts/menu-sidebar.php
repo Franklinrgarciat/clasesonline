@@ -35,10 +35,19 @@
                                 <!-- /.nav-second-level -->
                             </li>
                             <li>
-                                <a href="<?=$ruta?>controladores/RegistroController.php?operacion=registro"><i class="fa fa-table fa-fw"></i> Registrate!</a>
+                                <a href="#"><i class="fa fa-table fa-fw"></i> Productos <span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level">
+                                    <li>
+                                        <a href="<?=$ruta?>controladores/ProductoController.php?operacion=index">Listado</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="#">Mujer</a>
+                                    </li>
+                                </ul>
                             </li>
                             <li>
-                                <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                                <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Almacén </a>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>

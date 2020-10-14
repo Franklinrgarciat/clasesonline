@@ -4,7 +4,7 @@ include '../modelos/clasedb.php';
 /**
  * 
  */
-class PersonasController
+class ProductoController
 {
 	
 	public function index()
@@ -12,27 +12,25 @@ class PersonasController
 		
 		$db=new clasedb();
 		$conex=$db->conectar();
-		$sql="SELECT * FROM personas";//generando sql
+		$sql="SELECT * FROM productos";//generando sql
 		$resultado=mysqli_query($conex,$sql);//ejecutando sql
 		$filas=mysqli_num_rows($resultado);//cantidad de registros
 		$columnas=mysqli_num_fields($resultado);//cantidad de campos
-		$personas=array();//arreglo para guardar los registros
+		$productos=array();//arreglo para guardar los registros
 		$i=0;//variable iterativa
 		if ($filas>0) {
 			while ($data=mysqli_fetch_object($resultado)) {
-				$personas[$i]['id']=$data->id;
-				$personas[$i]['nombres']=$data->nombres;
-				$personas[$i]['apellidos']=$data->apellidos;
-				$personas[$i]['cedula']=$data->cedula;
-				$personas[$i]['tipo']=$data->tipo;
-				$personas[$i]['direccion']=$data->direccion;
-				$personas[$i]['id_usuario']=$data->id_usuario;
+				$productos[$i]['id']=$data->id;
+				$productos[$i]['nombre']=$data->nombre;
+				$productos[$i]['descripcion']=$data->descripcion;
+				$productos[$i]['precio']=$data->precio;
+				$productos[$i]['stock']=$data->stock;
 				$i++;
 			}
 		}
 		//cambiando
 		# listado
-		header('Location: ../vistas/personas/index.php?filas='.$filas.'&columnas='.$columnas.'&personas='.serialize($personas));
+		header('Location: ../vistas/producto/index.php?filas='.$filas.'&columnas='.$columnas.'&productos='.serialize($productos));
 	}
 
 	public function registro()
@@ -63,10 +61,10 @@ class PersonasController
 
 	public static function controlador($operacion)
 	{
-		$persona=new PersonasController();
+		$producto =new ProductoController();
 		switch ($operacion) {
 			case 'index':
-				$persona->index();
+				$producto->index();
 				break;
 			
 			default:
@@ -79,7 +77,7 @@ class PersonasController
 }//fin de la clase
 
 if (!empty($operacion)) {
-	PersonasController::controlador($operacion);
+	ProductoController::controlador($operacion);
 } else {
 	header('../home.php');
 }
