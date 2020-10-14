@@ -74,19 +74,7 @@ class PersonasController
 				break;
 		}
 	}
-	public static function usuarios($operacion)
-	{
-		$usuarios=new PersonasController();
-		switch ($operacion) {
-			case 'index':
-				$usuarios->Registro();
-				break;
-			
-			default:
-				# code...
-				break;
-		}
-	}
+	
 
 }//fin de la clase
 
@@ -95,11 +83,7 @@ if (!empty($operacion)) {
 } else {
 	header('../home.php');
 }
-if (!empty($usuarios)) {
-	PersonasController::controlador($usuarios);
-} else {
-	header('../home.php');
-}
+
 
 
 ?>
