@@ -9,6 +9,7 @@ class PersonasController
 	
 	public function index()
 	{
+		$var=1;
 		$db=new clasedb();
 		$conex=$db->conectar();
 		$sql="SELECT * FROM personas";//generando sql
@@ -29,7 +30,7 @@ class PersonasController
 				$i++;
 			}
 		}
-		
+		//cambiando
 		# listado
 		header('Location: ../vistas/personas/index.php?filas='.$filas.'&columnas='.$columnas.'&personas='.serialize($personas));
 	}
