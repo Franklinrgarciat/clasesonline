@@ -61,6 +61,7 @@ class ProductoController
 
 	public static function controlador($operacion)
 	{
+
 		$producto =new ProductoController();
 		switch ($operacion) {
 			case 'index':
