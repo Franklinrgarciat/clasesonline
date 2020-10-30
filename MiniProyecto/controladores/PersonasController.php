@@ -16,7 +16,7 @@ class PersonasController
 		$resultado=mysqli_query($conex,$sql);//ejecutando sql
 		$filas=mysqli_num_rows($resultado);//cantidad de registros
 		$columnas=mysqli_num_fields($resultado);//cantidad de campos
-		$personas=array();//arreglo para guardar los registros
+		$personas=array();//arreglo para store los registros
 		$i=0;//variable iterativa
 		if ($filas>0) {
 			while ($data=mysqli_fetch_object($resultado)) {
@@ -35,15 +35,74 @@ class PersonasController
 		header('Location: ../vistas/personas/index.php?filas='.$filas.'&columnas='.$columnas.'&personas='.serialize($personas));
 	}
 
-	public function registro()
+	public function create()
 	{
-		# formulario para registrar
-		header('Location: ../vistas/Registro/registro.php');
+		# formulario para create
+		
+		header('Location: ../vistas/personas/create.php');
 	}
 
 	public function store()
 	{
-		# registrar
+		extract($_POST);
+		$db=new clasedb();
+		$conex=$db->conectar();
+
+		//----verificando cédula
+		$sql="SELECT * FROM personas WHERE cedula='".$cedula."'";//generando sql
+		//echo $sql;
+		$resultado=mysqli_query($conex,$sql);//ejecutando sql
+		$buscar1=mysqli_num_rows($resultado);//cantidad de registros
+
+		//----verificando email
+		$sql="SELECT * FROM usuarios WHERE email='".$email."'";//generando sql
+		//echo $sql;
+		$resultado=mysqli_query($conex,$sql);//ejecutando sql
+		$buscar2=mysqli_num_rows($resultado);//cantidad de registros
+
+		//----verificando username
+		$sql="SELECT * FROM usuarios WHERE username='".$username."'";//generando sql
+		//echo $sql;
+		$resultado=mysqli_query($conex,$sql);//ejecutando sql
+		$buscar3=mysqli_num_rows($resultado);//cantidad de registros
+
+
+
+
+
+
+		if($buscar1>0){
+			$mensaje=1;
+			header('Location: ../vistas/personas/create.php?mensaje='.$mensaje);
+		}else{
+			if($buscar2>0){
+				$mensaje=2;
+				header('Location: ../vistas/personas/create.php?mensaje='.$mensaje);
+			}else{
+				if($buscar3){
+					$mensaje=3;
+					header('Location: ../vistas/personas/create.php?mensaje='.$mensaje);	
+				}else{
+					//registrando el usuario
+					$clave=password_hash($cedula, PASSWORD_DEFAULT);
+					$sql="INSERT INTO usuarios VALUES(NULL,'".$username."','".$email."','".$clave."','Persona')";
+					$resultado1=mysqli_query($conex,$sql);//ejecutando sql
+					$id_usuario=mysqli_insert_id($conex);
+					//registrando la persona
+					$sql="INSERT INTO personas VALUES(NULL,'".$nombres."','".$apellidos."','".$cedula."','".$tipo."','".$direccion."',".$id_usuario.")";
+					$resultado2=mysqli_query($conex,$sql);//ejecutando sql
+					
+					if($resultado1 && $resultado2){
+						$mensaje=4;
+					header('Location: ../controladores/PersonasController.php?operacion=index&mensaje'.$mensaje);		
+					}else{
+						$mensaje=5;
+					header('Location: ../controladores/PersonasController.php?operacion=index&mensaje'.$mensaje);		
+					}
+				}
+			}
+		}
+
 	}
 
 	public function edit()
@@ -68,7 +127,12 @@ class PersonasController
 			case 'index':
 				$persona->index();
 				break;
-			
+			case 'create':
+				$persona->create();
+				break;
+			case 'store':
+				$persona->store();
+				break;
 			default:
 				# code...
 				break;

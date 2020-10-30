@@ -17,6 +17,7 @@ class ProductoController
 		$filas=mysqli_num_rows($resultado);//cantidad de registros
 		$columnas=mysqli_num_fields($resultado);//cantidad de campos
 		$productos=array();//arreglo para guardar los registros
+		
 		$i=0;//variable iterativa
 		if ($filas>0) {
 			while ($data=mysqli_fetch_object($resultado)) {
