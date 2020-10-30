@@ -48,7 +48,7 @@ $contenido ='<div class="row">
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="panel panel-default">
+                    <div class="panel panel-green">
                         <div class="panel-heading">
                             Listado de Personas
                             <div style="float:right"><a style="color:black" href="../../controladores/PersonasController.php?operacion=create"><button type="button" ><b>Registrar</b></button></a>
