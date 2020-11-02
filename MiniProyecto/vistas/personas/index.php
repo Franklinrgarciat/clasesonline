@@ -42,7 +42,7 @@ $contenido ='<div class="row">
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <span>'.$helper->mensajes($opcion).'</span>
+                    '.$helper->mensajes($opcion).'
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
