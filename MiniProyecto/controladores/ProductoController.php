@@ -88,17 +88,17 @@ class ProductoController
 
 	}
 
-	public function edit()
+	public function edit($mensaje)
 	{
 		# formulario para editar
 	}
 
-	public function update()
+	public function update($mensaje)
 	{
 		# editar
 	}
 
-	public function destroy()
+	public function destroy($mensaje)
 	{
 		# eliminar
 	}

@@ -25,6 +25,7 @@ if ($filas>0) {
                         <td>".$personas[$i]['cedula']."</td>
                         <td>".$personas[$i]['tipo']."</td>
                         <td>".$personas[$i]['direccion']."</td>
+                        <td><a href='../../controladores/PersonasController.php?operacion=edit&id_persona=".$personas[$i]['id']."'><button type='button' class='btn btn-info btn-circle'><i class='fa fa-check'></i></button></a></td>
                     </tr>";
     }
 } else {
@@ -67,6 +68,7 @@ $contenido ='<div class="row">
                                             <th>Cédula</th>
                                             <th>Tipo</th>
                                             <th>Dirección</th>
+                                            <th>Acciones</th>
                                         </tr>
                                     </thead>
                                     <tbody>'.$registros.'
